@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gerador de Currículo</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script defer src="./js/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Gerador de Currículo</h1>
+        <form id="curriculoForm">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+            
+            <label for="objetivo">Objetivo Profissional:</label>
+            <textarea id="objetivo" name="objetivo" required></textarea>
+            
+            <label for="experiencia">Experiência Profissional:</label>
+            <textarea id="experiencia" name="experiencia" required></textarea>
+            
+            <label for="formacao">Formação Acadêmica:</label>
+            <textarea id="formacao" name="formacao" required></textarea>
+            
+            <button type="submit">Gerar Currículo</button>
+        </form>
+    </div>
+    
+    <div id="curriculoOutput" class="hidden">
+        <h2>Currículo Gerado</h2>
+        <p><strong>Nome:</strong> <span id="outNome"></span></p>
+        <p><strong>Email:</strong> <span id="outEmail"></span></p>
+        <p><strong>Telefone:</strong> <span id="outTelefone"></span></p>
+        <p><strong>Objetivo:</strong> <span id="outObjetivo"></span></p>
+        <p><strong>Experiência:</strong> <span id="outExperiencia"></span></p>
+        <p><strong>Formação:</strong> <span id="outFormacao"></span></p>
+        <button id="exportPDF">Exportar para PDF</button>
+    </div>
+</body>
+</html>
